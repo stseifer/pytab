@@ -171,8 +171,7 @@ def cli(ffmpeg_path: str, video_path: str, debug_flag: bool) -> None:
     if not valid:
         click.echo(f"Cancled: {server_data}")
 
-    #Downloading ffmpeg:
-    
+    # Downloading ffmpeg:
 
     tests = server_data["tests"]
     valid, runs, result = benchmark(placebo_cmd)
