@@ -173,7 +173,7 @@ def cli(ffmpeg_path: str, video_path: str, debug_flag: bool) -> None:
 
     # Downloading ffmpeg:
 
-    tests = server_data["tests"]
+    tests = server_data["tests"]  # noqa: F841
     valid, runs, result = benchmark(placebo_cmd)
     print()
     print(("-" * 15) + "DEV-OUT" + ("-" * 40))
